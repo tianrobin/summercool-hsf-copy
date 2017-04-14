@@ -16,7 +16,7 @@ public class MainTest {
 	public static void main(String[] args) {
 		
 		HsfConnector connector = new HsfConnectorImpl();
-		connector.connect(new InetSocketAddress("192.168.11.3", 8002));
+		connector.connect(new InetSocketAddress("127.0.0.1", 8002));
 		connector.registerService(new TestServiceImpl());
 	}
 }
